@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Menu</title>
 </head>
+
 <body>
-   <div class="main-container">
+    <div class="main-container">
         <img src="assets/home.jpg" alt="Todos os pratos (banner)" class="banner">
 
-    <h1>Menu - Faça sua Escolha</h1>
+        <h1>Menu - Faça sua Escolha</h1>
 
-    <div class="prato-principal">
-        <div class="title-principal">
-            Prato Principal
-        </div>
-
-        <div class="desc-pratos">
-            Todos os pratos acompanham arroz, feijão e a sobremesa do dia
-        </div>
-
-        <div class="card-pratos">
-            <div class="card">
-                <img src="assets/bife.jpg" alt="Bife">
-                 <p>Bife com Batata</p>
-            </div>
-            
-            <div class="card">
-                <img src="assets/coxa.jpg" alt="Coxa de Frango">
-                <p>Coxa de Frango Crocante</p>
+        <div class="prato-principal">
+            <div class="title-principal">
+                Prato Principal
             </div>
 
-            <div class="card">
-                <img src="assets/panela.jpg" alt="Carne de panela">
-                <p>Carne de Panela</p>
+            <div class="desc-pratos">
+                Todos os pratos acompanham arroz, feijão e a sobremesa do dia
             </div>
 
-        </div>
+            <div class="card-pratos">
+                <div class="card">
+                    <img src="assets/bife.jpg" alt="Bife">
+                    <p>Bife com Batata</p>
+                </div>
 
+                <div class="card">
+                    <img src="assets/coxa.jpg" alt="Coxa de Frango">
+                    <p>Coxa de Frango Crocante</p>
+                </div>
 
+                <div class="card">
+                    <img src="assets/panela.jpg" alt="Carne de panela">
+                    <p>Carne de Panela</p>
+                </div>
 
-    </div>
-
-    <div class="acompanhamentos">
-        <div class="title-acomp">
-            Acompanhamentos
-        </div>
-
-        <div class="desc-acomp">
-            Porções para uma pessoa
-        </div>
-
-        <div class="card-acomps">
-
-            <div class="card">
-                <img src="assets/farofa.jpg" alt="Farofa">
-                <p>Farofa</p>
             </div>
 
-            <div class="card">
-                <img src="assets/salad.jpg" alt="Salada">
-                <p>Salada</p>
-            </div>
-        
-            <div class="card">
-                <img src="assets/torresmo.jpg" alt="Torresmo">
-                <p>Torresmo</p>
-            </div>
 
 
         </div>
 
-    </div>
+        <div class="acompanhamentos">
+            <div class="title-acomp">
+                Acompanhamentos
+            </div>
+
+            <div class="desc-acomp">
+                Porções para uma pessoa
+            </div>
+
+            <div class="card-acomps">
+
+                <div class="card">
+                    <img src="assets/farofa.jpg" alt="Farofa">
+                    <p>Farofa</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/salad.jpg" alt="Salada">
+                    <p>Salada</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/torresmo.jpg" alt="Torresmo">
+                    <p>Torresmo</p>
+                </div>
+
+
+            </div>
+
+        </div>
         <div class="form">
             <div class="title-form">
                 Dados Pessoais
@@ -84,7 +86,16 @@
 
         <button id="btnCalcular">Calcular</button>
 
-   </div>
-    
+    </div>
+
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
+    <script>
+        $('#phoneClient').mask('(00) 0000-0000');
+    </script>
+
 </body>
+
 </html>
