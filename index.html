@@ -28,18 +28,33 @@
                     <img src="assets/bife.jpg" alt="Bife">
                     <p>Bife com Batata</p>
                     <p class="valor">R$30,00</p>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" class="input-text qty text">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
                 <div class="card">
                     <img src="assets/coxa.jpg" alt="Coxa de Frango">
                     <p>Coxa de Frango</p>
                     <p class="valor">R$25,00</p>
+                     <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" class="input-text qty text">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
                 <div class="card">
                     <img src="assets/panela.jpg" alt="Carne de panela">
                     <p>Carne de Panela</p>
                     <p class="valor">R$22,00</p>
+                     <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" class="input-text qty text">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
             </div>
@@ -90,17 +105,23 @@
             <input type="email" id="emailClient" placeholder="Digite seu email:">
         </div>
 
-        <button id="btnCalcular">Calcular</button>
+        <button id="btnCalcular" onclick="calc()">Calcular</button>
+
+        <div id="output"></div>
 
     </div>
 
 
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
         $('#phoneClient').mask('(00) 0000-0000');
     </script>
+
+  
 
 </body>
 
