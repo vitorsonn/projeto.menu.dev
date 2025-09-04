@@ -16,7 +16,7 @@ function calc(){
         let id = input.id
 
 
-        output.innerHTML += `Prato: ${pratosPrincipais[id-1].name}  - Preço Unit: ${pratosPrincipais[id-1].price} - Quantidade: ${input.value} </br>`
+        output.innerHTML += `Prato: ${pratosPrincipais[id-1].nome}  - Preço Unit: ${pratosPrincipais[id-1].price} - Quantidade: ${input.value} </br>`
         total += pratosPrincipais[id-1].price * parseFloat(input.value)
     }
 
