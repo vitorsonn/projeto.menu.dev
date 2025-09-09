@@ -15,16 +15,16 @@ function calc(){
     let nomeCliente = document.getElementById("nomeClient").value
     output.innerHTML = `Caro <strong>${nomeCliente}</strong> </br> Seu Pedido é: </br>`
 
-    let pratosSelecionados = []
+    let pratosSelecionados = [] // array vazio que vai receber de fato os escolhidos
 
     for(let input of quantities){
         let quantidade = parseFloat(input.value)
         if (quantidade > 0){
             let id = input.id
-            let prato = pratosPrincipais[id-1]
-            pratosSelecionados.push({
-                ...prato,
-                quantidade: quantidade
+            let prato = pratosPrincipais[id-1] //recebe cada prato individualmente
+            pratosSelecionados.push({ //push() para adicionar um ou mais elementos no final do array
+                ...prato, //copia as propriedades do prato
+                quantidade: quantidade //quantidade selecionada dentro do objeto
             })
         }
 
