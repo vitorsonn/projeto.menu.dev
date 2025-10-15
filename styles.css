@@ -1,0 +1,74 @@
+body{
+    font-family: sans-serif;
+    background-color: #C5C1C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    width: 900px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+.banner{
+   max-width: 850px;
+   display: block;
+   margin: 0 auto;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prato-principal{
+    width: 850px;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    display: grid;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding-bottom: 35px;
+}
+
+.title-principal{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.desc-pratos{
+    padding: 10px;
+
+}
+
+.card-pratos{
+    display: flex;
+    /* space-between formato cards */
+    justify-content: space-between; 
+}
+
+
+.card{
+    background: #fff;
+    padding: 25px 14px;
+    width: 150px;
+    border: 2px solid #cccbcb;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    margin: 0 auto;
+
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p{
+    font-size: 15px;
+    font-weight: 700;
+}
