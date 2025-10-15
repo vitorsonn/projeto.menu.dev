@@ -156,3 +156,42 @@ button{
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     font-size: medium;
 }
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quantity .input-text.qty{
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.quantity.buttons_added{
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity .minus,
+.quantity .plus{
+    padding: 5px 5px 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #efefef;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.quantity .minus:hover,
+.quantity .plus:hover{
+    background-color: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
