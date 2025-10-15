@@ -42,7 +42,7 @@ h1{
 }
 
 .desc-pratos{
-    padding: 10px;
+    padding: 8px;
 
 }
 
@@ -71,4 +71,36 @@ h1{
 .card p{
     font-size: 15px;
     font-weight: 700;
+}
+
+.valor{
+    color: green;
+    font-weight: bolder;
+}
+
+.acompanhamentos{
+    width: 850px;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    display: grid;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title-acomp{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.desc-acomp{
+    padding: 8px;
+}
+
+.card-acomps{
+    display: flex;
+    justify-content: space-between;
 }
